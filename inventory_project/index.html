@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Inventory Management System</h1>
+    </header>
+    <main>
+        <section id="product-section">
+            <h2>Products</h2>
+            <button onclick="showAddProductForm()">Add Product</button>
+            <div id="product-list"></div>
+        </section>
+
+        <section id="supplier-section">
+            <h2>Suppliers</h2>
+            <button onclick="showAddSupplierForm()">Add Supplier</button>
+            <div id="supplier-list"></div>
+        </section>
+
+        <section id="sale-order-section">
+            <h2>Sales Orders</h2>
+            <button onclick="showAddSaleOrderForm()">Create Sale Order</button>
+            <div id="sale-order-list"></div>
+        </section>
+    </main>
+
+    <!-- Forms -->
+    <div id="forms-container" class="hidden">
+        <form id="add-product-form" class="hidden">
+            <h3>Add Product</h3>
+            <input type="text" id="product-name" placeholder="Product Name" required>
+            <input type="text" id="product-category" placeholder="Category" required>
+            <input type="number" id="product-price" placeholder="Price" required>
+            <input type="number" id="product-stock" placeholder="Stock Quantity" required>
+            <button type="button" onclick="addProduct()">Submit</button>
+        </form>
+
+        <form id="add-supplier-form" class="hidden">
+            <h3>Add Supplier</h3>
+            <input type="text" id="supplier-name" placeholder="Supplier Name" required>
+            <input type="email" id="supplier-email" placeholder="Email" required>
+            <input type="text" id="supplier-phone" placeholder="Phone Number" required>
+            <textarea id="supplier-address" placeholder="Address"></textarea>
+            <button type="button" onclick="addSupplier()">Submit</button>
+        </form>
+
+        <form id="add-sale-order-form" class="hidden">
+            <h3>Create Sale Order</h3>
+            <input type="text" id="sale-product-id" placeholder="Product ID" required>
+            <input type="number" id="sale-quantity" placeholder="Quantity" required>
+            <button type="button" onclick="createSaleOrder()">Submit</button>
+        </form>
+    </div>
+
+    <script src="C:\Users\gouta\inventory_project\inventory_project\script.js"></script>
+</body>
+</html>

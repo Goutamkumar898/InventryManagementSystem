@@ -1,0 +1,17 @@
+{
+  "name": "inventory_project",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "apps.py"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "mongoose": "^8.9.4"
+  },
+  "devDependencies": {},
+  "description": ""
+}
